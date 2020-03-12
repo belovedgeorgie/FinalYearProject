@@ -34,11 +34,3 @@ func init() {
 		}
 	}()
 }
-
-func ChangePassword() {
-
-}
-
-func AddToChat() {
-
-}
