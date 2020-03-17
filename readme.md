@@ -2,7 +2,7 @@ A chatting application using Pion webRTC for text, video, voice and file transfe
 
 To build website. Install the Go programming compiler <a href="https://golang.org/dl/">here</a>
 
-Run >"go build" to build to executable
+> Run "go build" to build to executable
 
 Run executable
 
