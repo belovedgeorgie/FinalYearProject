@@ -25,7 +25,7 @@
       <v-col cols="12"></v-col>
     </v-row>
 
-    <v-flex style="max-height: 580px; max-width: 300px" class="overflow-auto">
+    <v-flex fluid style="max-height: 490px; max-width: 300px" class="overflow-y-auto">
       <v-row no-gutters>
         <v-col cols="12" v-for="i in 5" :key="i">
           <v-card color="#385F73" dark>
