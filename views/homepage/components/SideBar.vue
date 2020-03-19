@@ -12,29 +12,28 @@
           clearable
           single-line
           auto-grow
-          placeholder="search"
+          placeholder="search for contacts"
           height="8"
           width="100px"
         ></v-textarea>
       </v-col>
 
-      <v-row justify="center">
-        <v-col md="auto">
+      <v-row>
+        <v-col md="auto" offset-md="1">
           <v-btn flat outlined height="50" width="50">
             <v-icon>mdi-phone</v-icon>
           </v-btn>
         </v-col>
-        <v-col md="1"></v-col>
-        <v-col md="auto">
+        <v-col md="auto" offset-md="1">
           <v-btn flat outlined height="50" width="50">
-            <v-icon>mdi-bell-sleep</v-icon>
+            <v-icon>mdi-bell</v-icon>
           </v-btn>
         </v-col>
       </v-row>
     </v-row>
 
     <v-flex style="max-height: 580px; max-width: 300px" class="overflow-auto">
-      <v-row>
+      <v-row no-gutters>
         <v-col cols="12" v-for="i in 5" :key="i">
           <v-card color="#385F73" dark>
             <v-card-title class="headline">Unlimited music now</v-card-title>
