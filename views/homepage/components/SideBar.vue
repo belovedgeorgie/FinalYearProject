@@ -5,21 +5,13 @@
       <v-col cols="12">
         <v-img src="./assets/unilag.svg" align="left" contain height="100"></v-img>
       </v-col>
-      <v-col cols="12">
-        <v-textarea
-          rounded
-          filled
-          clearable
-          single-line
-          auto-grow
-          placeholder="search for contacts"
-          height="8"
-          width="100px"
-        ></v-textarea>
+
+      <v-col md="auto">
+        <v-text-field rounded filled clearable placeholder="search for contacts"></v-text-field>
       </v-col>
 
-      <v-row>
-        <v-col md="auto" offset-md="1">
+      <v-row justify="center" align="center">
+        <v-col md="auto">
           <v-btn flat outlined height="50" width="50">
             <v-icon>mdi-phone</v-icon>
           </v-btn>
@@ -30,6 +22,7 @@
           </v-btn>
         </v-col>
       </v-row>
+      <v-col cols="12"></v-col>
     </v-row>
 
     <v-flex style="max-height: 580px; max-width: 300px" class="overflow-auto">
