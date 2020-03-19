@@ -12,10 +12,11 @@ import (
 
 func HomePage(w http.ResponseWriter, r *http.Request, _ httprouter.Params) {
 	// use (%%) instead of {{}} for templates
-	tmpl, terr := template.New("home.html").Delims("(%", "%)").ParseFiles("views/homepage/home.html", "views/homepage/components/SideBar.vue")
+	tmpl, terr := template.New("home.html").Delims("(%", "%)").ParseFiles("views/homepage/home.html", "views/homepage/components/SideBar.vue", "views/homepage/components/ChattingComponent.vue")
 	if terr != nil {
 		log.Fatalln(terr)
 	}
+
 	if err := tmpl.ExecuteTemplate(w, "home.html", nil); err != nil {
 		log.Println(err)
 	}

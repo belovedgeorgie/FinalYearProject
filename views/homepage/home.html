@@ -31,7 +31,7 @@
                         </v-col>
                         <v-divider vertical></v-divider>
                         <v-col>
-
+                            <chatting-component />
                         </v-col>
                     </v-row>
                 </v-container>
@@ -45,6 +45,9 @@
     <script>
         Vue.component('side-bar', {
             template: `(% template "sidebar" .%)`
+        })
+        Vue.component('chatting-component', {
+            template: `(% template "chattingComponent" .%)`
         })
 
         new Vue({
