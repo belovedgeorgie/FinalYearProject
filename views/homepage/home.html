@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="description" content="Web Chat">
-    <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1, maximum-scale=1">
     <meta itemprop="description" content="Client-side WebRTC code samples">
     <meta itemprop="name" content="Home Chat">
     <meta name="mobile-web-app-capable" content="yes">
@@ -19,24 +18,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
 
     <title>Home</title>
-    <!-- <link rel="icon" sizes="192x192" href="../../../images/webrtc-icon-192x192.png"> -->
 </head>
 
 <body>
     <div id="app">
         <v-app>
             <v-content>
-                <v-container>This is the proposed home page</v-container>
+                <v-container fluid>
+                    <v-row no-gutters>
+                        <v-col md="2">
+                            <side-bar />
+                        </v-col>
+                        <v-divider vertical></v-divider>
+                        <v-col>
+                            <chatting-component />
+                        </v-col>
+                    </v-row>
+                </v-container>
             </v-content>
         </v-app>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
+
     <script>
+        Vue.component('side-bar', {
+            template: `(% template "sidebar" .%)`,
+            (% template "sidebarData" %),
+        })
+        Vue.component('chatting-component', {
+            template: `(% template "chattingComponent" %)`,
+        })
+
         new Vue({
             el: '#app',
             vuetify: new Vuetify(),
+
         })
     </script>
 </body>

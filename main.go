@@ -14,6 +14,8 @@ func main() {
 	router.GET("/", controller.HomePage)
 	router.GET("/login", controller.LoginPage)
 
+	router.ServeFiles("/assets/*filepath", http.Dir("./views/assets"))
+
 	if err := http.ListenAndServe(":8080", router); err != nil {
 		log.Fatalln(err)
 	}
