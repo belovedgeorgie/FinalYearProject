@@ -44,10 +44,11 @@
 
     <script>
         Vue.component('side-bar', {
-            template: `(% template "sidebar" .%)`
+            template: `(% template "sidebar" .%)`,
+            (% template "sidebarData" %),
         })
         Vue.component('chatting-component', {
-            template: `(% template "chattingComponent" .%)`
+            template: `(% template "chattingComponent" %)`,
         })
 
         new Vue({

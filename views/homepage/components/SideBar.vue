@@ -27,19 +27,33 @@
 
     <v-flex fluid style="max-height: 490px; max-width: 300px" class="overflow-y-auto">
       <v-row no-gutters>
-        <v-col cols="12" v-for="i in 5" :key="i">
-          <v-card color="#385F73" dark>
-            <v-card-title class="headline">Unlimited music now</v-card-title>
+        <v-list tile dense three-line>
+          <v-list-item-group v-model="item" color="black">
+            <v-list-item v-for="i in 10" :key="i">
+              <v-list-item-avatar>
+                <v-icon large>mdi-account-circle</v-icon>
+              </v-list-item-avatar>
 
-            <v-card-subtitle>Listen to your favorite artists and albums whenever and wherever, online and offline.</v-card-subtitle>
-
-            <v-card-actions>
-              <v-btn text>Listen Now</v-btn>
-            </v-card-actions>
-          </v-card>
+              <v-list-item-content>
+                <v-list-item-title>matric@live.unilag.edu.ng</v-list-item-title>
+                <v-list-item-subtitle>Text Here</v-list-item-subtitle>
+              </v-list-item-content>
+            </v-list-item>
+          </v-list-item-group>
+        </v-list>
+      </v-row>
+    </v-flex>
+  </v-container>
+</template>
         </v-col>
       </v-row>
     </v-flex>
   </v-container>
 </template>
+(%end%)
+
+(%define "sidebarData"%)
+  data: () => ({
+    item: 0,
+  })
 (%end%)

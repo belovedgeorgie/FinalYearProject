@@ -27,7 +27,7 @@
         <v-col cols="12"></v-col>
       </v-col>
 
-      <v-flex style="max-height: 620px; " class="overflow-auto">
+      <v-flex style="max-height: 680px; " class="overflow-auto">
         <v-row>
           <v-col cols="12" align="right">
             <v-chip class="ma-2">Hello</v-chip>
