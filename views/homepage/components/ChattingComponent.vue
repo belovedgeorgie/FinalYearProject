@@ -11,12 +11,12 @@
             </h2>
           </v-col>
 
+          <v-btn fab outline flat depressed>
+            <v-icon>mdi-account-multiple-plus-outline</v-icon>
+          </v-btn>
           <v-col md="auto" align="right">
             <v-btn fab outline flat depressed>
               <v-icon>mdi-video-outline</v-icon>
-            </v-btn>
-            <v-btn fab outline flat depressed>
-              <v-icon>mdi-account-multiple-plus-outline</v-icon>
             </v-btn>
             <v-btn fab outline flat depressed>
               <v-icon>mdi-phone</v-icon>
@@ -27,7 +27,7 @@
         <v-col cols="12"></v-col>
       </v-col>
 
-      <v-flex style="max-height: 620px; " class="overflow-auto">
+      <v-flex style="max-height: 680px; " class="overflow-auto">
         <v-row>
           <v-col cols="12" align="right">
             <v-chip class="ma-2">Hello</v-chip>
@@ -62,7 +62,17 @@
         </v-row>
       </v-flex>
 
-      <v-col></v-col>
+      <v-row no-gutters>
+        <v-btn fab outline flat depressed>
+          <v-icon>mdi-microphone-settings</v-icon>
+        </v-btn>
+
+        <v-btn fab outline flat depressed>
+          <v-icon>mdi-paperclip</v-icon>
+        </v-btn>
+
+        <v-textarea rows="1" filled rounded clearable></v-textarea>
+      </v-row>
     </v-row>
   </v-container>
 </template>
