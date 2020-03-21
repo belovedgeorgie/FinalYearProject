@@ -25,7 +25,7 @@
       <v-col cols="12"></v-col>
     </v-row>
 
-    <v-flex fluid style="max-height: 490px; max-width: 300px" class="overflow-y-auto">
+    <v-flex fluid style="height: 55vh; max-width: 300px" class="overflow-y-auto">
       <v-row no-gutters>
         <v-list tile dense three-line>
           <v-list-item-group v-model="item" color="black">
