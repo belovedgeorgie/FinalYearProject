@@ -1,6 +1,6 @@
 (%define "chattingComponent"%)
 <template>
-  <v-container fluid>
+  <v-container style="height: 80vh; " fluid>
     <v-row no-gutters>
       <v-col cols="12">
         <v-row no-gutters>
@@ -27,40 +27,63 @@
         <v-col cols="12"></v-col>
       </v-col>
 
-      <v-flex style="max-height: 680px; " class="overflow-auto">
+      <v-container fluid style="height: 80vh; " class="overflow-auto">
         <v-row>
           <v-col cols="12" align="right">
-            <v-chip class="ma-2">Hello</v-chip>
+            <v-card outlined class="d-inline-block mx-auto">
+              <v-card-title class="text--secondary">
+                <h6>11:44PM 12/04/2020</h6>
+                <v-spacer></v-spacer>
+                <v-card-actions>
+                  <v-menu absolute bottom left>
+                    <template v-slot:activator="{ on }">
+                      <v-btn icon v-on="on">
+                        <v-icon>mdi-chevron-down</v-icon>
+                      </v-btn>
+                    </template>
+
+                    <v-list>
+                      <v-list-item v-for="i in 5" :key="i">
+                        <v-list-item-title>{{i}}</v-list-item-title>
+                      </v-list-item>
+                    </v-list>
+                  </v-menu>
+                </v-card-actions>
+              </v-card-title>
+              <v-card-text class="flex">
+                <span>Hello there my name is michael</span>
+              </v-card-text>
+            </v-card>
           </v-col>
+
           <v-col cols="12" align="left">
-            <v-chip class="ma-2">typing....</v-chip>
-          </v-col>
-          <v-col cols="12" align="right">
-            <v-chip class="ma-2">Hello</v-chip>
-          </v-col>
-          <v-col cols="12" align="left">
-            <v-chip class="ma-2">typing....</v-chip>
-          </v-col>
-          <v-col cols="12" align="right">
-            <v-chip class="ma-2">Hello</v-chip>
-          </v-col>
-          <v-col cols="12" align="left">
-            <v-chip class="ma-2">typing....</v-chip>
-          </v-col>
-          <v-col cols="12" align="right">
-            <v-chip class="ma-2">Hello</v-chip>
-          </v-col>
-          <v-col cols="12" align="left">
-            <v-chip class="ma-2">typing....</v-chip>
-          </v-col>
-          <v-col cols="12" align="right">
-            <v-chip class="ma-2">Hello</v-chip>
-          </v-col>
-          <v-col cols="12" align="left">
-            <v-chip class="ma-2">typing....</v-chip>
+            <v-card outlined class="d-inline-block mx-auto">
+              <v-card-title class="text--secondary">
+                <h6>Matric 11:44PM 12/04/2020</h6>
+                <v-spacer></v-spacer>
+                <v-card-actions>
+                  <v-menu absolute bottom left>
+                    <template v-slot:activator="{ on }">
+                      <v-btn icon v-on="on">
+                        <v-icon>mdi-chevron-down</v-icon>
+                      </v-btn>
+                    </template>
+
+                    <v-list>
+                      <v-list-item v-for="i in 5" :key="i">
+                        <v-list-item-title>{{i}}</v-list-item-title>
+                      </v-list-item>
+                    </v-list>
+                  </v-menu>
+                </v-card-actions>
+              </v-card-title>
+              <v-card-text class="flex">
+                <span>Hi there</span>
+              </v-card-text>
+            </v-card>
           </v-col>
         </v-row>
-      </v-flex>
+      </v-container>
 
       <v-row no-gutters>
         <v-btn fab outline flat depressed>
